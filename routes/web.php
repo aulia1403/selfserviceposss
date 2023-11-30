@@ -42,7 +42,7 @@ Route::get('/about/{search}', function () {
 });
 Route::get('/Produk', 'App\Http\Controllers\ProdukController@index');
 
-Route::get('/Produk/tambah_produk', 'ProdukController@tambah');
-Route::post('/Produk/simpan_produk', 'ProdukController@simpan');
-Route::get('/Produk/ubah_produk(id)', 'ProdukController@ubah');
-Route::post('/Produk/update_produk(id)', 'ProdukController@update');
+//Route::get('/Produk/tambah_produk', 'ProdukController@tambah');
+//Route::post('/Produk/simpan_produk', 'ProdukController@simpan');
+//Route::get('/Produk/ubah_produk(id)', 'ProdukController@ubah');
+//Route::post('/Produk/update_produk(id)', 'ProdukController@update');

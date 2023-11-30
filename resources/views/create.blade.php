@@ -1,5 +1,6 @@
 @extends('layouts.default')
 
+
 @section('content')
     <section>
         <div class="container mt-5">
@@ -7,7 +8,7 @@
             <div class="row">
                 <div class="col-lg-8">
                     <form action="{{url('/store')}}" method="POST" enctype="multipart/form-data">
-                        @csrf 
+                        @csrf z
                         <div class="form-group">
                             <label for="nama">*Nama Mahasiswa</label>
                             <input type="text" name="nama" class="form-control" placeholder="Wulan Salma">
