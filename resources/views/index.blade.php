@@ -5,12 +5,12 @@
    <div class="continer mt-5">
     <div class="row">
         <div class="col-lg-8">
-            <h1>CRUD LARAVEL</h1>
-            <a href="{{url('create')}}" class="btn btn-primary"> + Tambah Mahasiswa</a>
+            <h1>DATA MAHASISWA</h1>
+            <a href="{{url('create')}}" class="btn btn-primary"> + Tambah Data Mahasiswa</a>
         </div>
 
         <div class="col-lg-8 mt-5">
-            <table class="table-bordered">
+            <table class="table table-primary table-center">
                 <tr>
                     <th>No</th>
                     <th>Nama</th>
