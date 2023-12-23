@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class ProdukController extends Controller
 {
+    function __construct(){
+        $this->middleware('user')->only('index','create');
+    }
+    
     public function index(){
         $data = [
             'pageTitle' => 'Produk',

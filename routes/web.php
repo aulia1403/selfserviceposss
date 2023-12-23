@@ -40,7 +40,10 @@ Route::get('/about/{search}', function () {
     ];
     return view('about', $data);
 });
-Route::get('/Produk', 'App\Http\Controllers\ProdukController@index');
+
+Route::middleware(['auth', 'user'])->group(function() {
+    Route::get('/Produk', 'App\Http\Controllers\ProdukController@index');
+});
 
 //Route::get('/Produk/tambah_produk', 'ProdukController@tambah');
 //Route::post('/Produk/simpan_produk', 'ProdukController@simpan');
